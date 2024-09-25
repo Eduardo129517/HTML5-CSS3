@@ -1,0 +1,22 @@
+/* Estiliza o corpo da página */
+body {
+    background-color: rgb(3, 0, 0); /* Cor de fundo escura */
+    color: white; /* Cor do texto para contraste com o fundo escuro */
+    font-family: Arial, sans-serif; /* Fonte padrão para a página */
+    margin: 0; /* Remove margens padrão do navegador */
+    padding: 0; /* Remove preenchimento padrão do navegador */
+}
+
+/* Centraliza os títulos */
+h1, h2 {
+    text-align: center;
+    margin: 0; /* Remove margens padrão para um layout mais controlado */
+}
+
+/* Estiliza as imagens */
+img {
+    display: block; /* Faz com que a imagem se comporte como um bloco */
+    margin: 20px auto; /* Adiciona uma margem de 20px ao redor da imagem e a centraliza horizontalmente */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}

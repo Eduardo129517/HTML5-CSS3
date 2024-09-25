@@ -1,0 +1,66 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+body{
+    background-color: rgb(54, 6, 6);
+} 
+
+.navbar {
+    background-color: black;
+  }
+  
+  .navbar .navbar-brand, 
+  .navbar .nav-link, 
+  .navbar .navbar-toggler {
+    color: white;
+  }
+  
+  .navbar .nav-link:hover, 
+  .navbar .navbar-brand:hover, 
+  .navbar .dropdown-item:hover {
+    color: #ccc; /* Cor das letras ao passar o mouse */
+  }
+  
+  .dropdown-menu {
+    background-color: black;
+  }
+  
+  .dropdown-item {
+    color: white;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #333;
+    color: #ccc; /* Cor ao passar o mouse */
+  }
+  
+  .form-control {
+    background-color: black;
+    color: white;
+    border: 1px solid #555;
+  }
+  
+  .form-control::placeholder {
+    color: #ccc;
+  }
+  
+  .btn-outline-success {
+    color: white;
+    border-color: white;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: white;
+    color: black;
+  }
+  
