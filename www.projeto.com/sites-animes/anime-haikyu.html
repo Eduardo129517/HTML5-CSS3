@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Haikyuu!!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animes.css">
+    <link rel="icon" href="img/icon.png">
+
+    <style>
+      /* O conteúdo extra é oculto quando a página é carregada */
+      #moreContent {
+          display: none;
+      }
+
+      .link-estilo {
+          color: orange;
+          text-decoration: none; /* remove sublinhado */
+      }
+
+      .link-estilo:hover {
+          cursor: pointer; /* faz aparecer a mãozinha */
+          text-decoration: underline; /* opcional: adiciona sublinhado quando o mouse estiver sobre o link */
+      }
+      
+          /* O conteúdo extra é oculto quando a página é carregada */
+      #moreContent {
+          display: none;
+      }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Follow on Twitter</a></li>
+              <li><a href="#" class="text-white">Like on Facebook</a></li>
+              <li><a href="#" class="text-white">Email me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+       <img src="img/icon.png" alt="" width="10%" height="10%">
+          <strong>Neko Stream</strong>
+        </a>
+        <a href="../index.html" class="btn btn-outline-light">Volta ao menu</a>
+      </div>
+    </div>
+</header>
+
+    <header class="bg-dark text-white p-3 text-center">
+        <h1>Streaming - Haikyuu!!</h1>
+    </header>
+
+    <div class="container mt-5">
+      <div class="row">
+          <div class="col-md-8 offset-md-2">
+              <div class="video-container">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JOGp2c7-cKc" 
+                    title="Haikyu! Streaming" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- Descrição sobre Bleach -->
+    <div class="container mt-5 text-start">
+      <div class="row">
+          <h2 class="text-start">Haikyuu!! | 8.44★</h2>
+          <!-- Primeiro parágrafo visível -->
+          <p>Haikyuu!! é uma série de anime e mangá criada por Haruichi Furudate, publicada na Weekly Shōnen Jump de 2012 a 2020, com um total de 45 volumes. A história acompanha Shōyō Hinata, um jovem apaixonado por vôlei que, apesar de sua baixa estatura, sonha em se tornar um jogador de elite após assistir a um jogo emocionante de um famoso "jogador pequeno" chamado "O Pequeno Gigante". Determinado a seguir seus sonhos, Hinata se inscreve na escola secundaria Karasuno, conhecida por seu time de vôlei.</p>
+          
+          <!-- Conteúdo oculto inicialmente -->
+          <div id="moreContent">
+              <p>No entanto, ao chegar na Karasuno, Hinata descobre que seu rival de infância, Tobio Kageyama, um talentoso levantador, também faz parte da equipe. Depois de um início conturbado, os dois se juntam para formar uma dupla poderosa, enfrentando desafios tanto dentro quanto fora das quadras. A série destaca o crescimento pessoal e o trabalho em equipe, mostrando como Hinata e Kageyama superam suas diferenças e se tornam jogadores complementares.</p>
+              <p>Haikyuu!! é conhecida por seu realismo nas partidas de vôlei, capturando a dinâmica do esporte com uma representação fiel das técnicas e estratégias. Além das intensas competições, a série explora os relacionamentos entre os membros da equipe, suas histórias pessoais e a importância da amizade e do espírito esportivo. Personagens como Daichi Sawamura, o capitão da equipe, e Tsukishima Kei, um jogador inicialmente cético, trazem profundidade à narrativa, cada um com suas próprias lutas e desenvolvimento.</p>
+              <p>Com uma combinação equilibrada de drama, humor e ação, Haikyuu!! conquistou uma base de fãs apaixonada e se destacou como uma das melhores séries esportivas da década. O anime foi elogiado por sua animação vibrante e trilha sonora emocionante, que intensificam a experiência das partidas. Ao longo dos anos, Haikyuu!! se tornou um fenômeno cultural, inspirando novos jogadores de vôlei e deixando uma marca duradoura na indústria de anime e mangá.</p>
+          </div>
+  
+          <!-- Botão para mostrar mais -->
+          <a onclick="showMore()" class="link-estilo">Mostrar mais</a>
+      </div>
+  </div>
+  
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p>© 2024 Streaming Haikyuu!! - Todos os direitos reservados</p>
+  </footer>
+  
+  <script>
+      function showMore() {
+          var moreContent = document.getElementById("moreContent");
+          var button = document.querySelector("button");
+  
+          if (moreContent.style.display === "none") {
+              moreContent.style.display = "block";  // Mostra o conteúdo oculto
+              button.textContent = "Mostrar menos";
+          } else {
+              moreContent.style.display = "none";   // Esconde o conteúdo novamente
+              button.textContent = "Mostrar mais";
+          }
+      }
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Spy X Family</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animes.css">
+    <link rel="icon" href="img/icon.png">
+
+    <style>
+      /* O conteúdo extra é oculto quando a página é carregada */
+      #moreContent {
+          display: none;
+      }
+
+      .link-estilo {
+          color: orange;
+          text-decoration: none; /* remove sublinhado */
+      }
+
+      .link-estilo:hover {
+          cursor: pointer; /* faz aparecer a mãozinha */
+          text-decoration: underline; /* opcional: adiciona sublinhado quando o mouse estiver sobre o link */
+      }
+      
+          /* O conteúdo extra é oculto quando a página é carregada */
+      #moreContent {
+          display: none;
+      }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Follow on Twitter</a></li>
+              <li><a href="#" class="text-white">Like on Facebook</a></li>
+              <li><a href="#" class="text-white">Email me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+       <img src="img/icon.png" alt="" width="10%" height="10%">
+          <strong>Neko Stream</strong>
+        </a>
+        <a href="../index.html" class="btn btn-outline-light">Volta ao menu</a>
+      </div>
+    </div>
+</header>
+
+    <header class="bg-dark text-white p-3 text-center">
+        <h1>Streaming - Spy X Family</h1>
+    </header>
+
+    <div class="container mt-5">
+      <div class="row">
+          <div class="col-md-8 offset-md-2">
+              <div class="video-container">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0CJr6AfE2rY" 
+                    title="Spy x Family Streaming" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- Descrição sobre Bleach -->
+    <div class="container mt-5 text-start">
+      <div class="row">
+          <h2 class="text-start">Spy X Family | 8.49★</h2>
+          <!-- Primeiro parágrafo visível -->
+          <p>Spy x Family é uma série de anime e mangá criada por Tatsuya Endo, que começou a ser publicada na Shueisha em 2019. A história gira em torno de um espião conhecido como "Twilight", que é encarregado de uma missão crítica para manter a paz entre duas nações em guerra. Para cumprir seu objetivo, ele precisa construir uma família falsa, mas o que ele não sabe é que cada membro dessa família tem seus próprios segredos.</p>
+          
+          <!-- Conteúdo oculto inicialmente -->
+          <div id="moreContent">
+              <p>Twilight, cujo verdadeiro nome é Loid Forger, adota a identidade de um psiquiatra e recruta uma "filha" chamada Anya, que na verdade é uma garota com habilidades telepáticas, capaz de ler a mente das pessoas ao seu redor. Para completar a farsa, ele também se casa com Yor Briar, uma funcionária pública que leva uma vida dupla como uma assassina profissional conhecida como "Thorn Princess". Com esses três personagens formando uma família inusitada, a série explora tanto as comédias do cotidiano quanto as tensões da espionagem.</p>
+              <p>Spy x Family é elogiada por sua mistura única de gêneros, combinando ação, comédia e drama, com um toque de suspense. As interações entre os personagens são cativantes e muitas vezes hilárias, especialmente devido à inocência de Anya, que tenta ajudar seus "pais" em suas missões enquanto lida com suas próprias aventuras infantis.</p>
+              <p>A série também toca em temas de família, identidade e o que significa ser humano, enquanto os personagens se esforçam para manter suas verdadeiras naturezas ocultas uns dos outros. O desenvolvimento do relacionamento entre Loid, Anya e Yor é um dos pontos centrais da narrativa, trazendo momentos de ternura e emoção.</p>
+              <p>A animação da adaptação para anime, que começou a ser exibida em 2022, recebeu aclamação pela sua qualidade visual e fidelidade ao material original. Spy x Family rapidamente conquistou uma base de fãs global, solidificando sua posição como uma das séries mais populares da sua época. Com seu enredo envolvente e personagens carismáticos, Spy x Family continua a se destacar como uma obra única no universo do anime e mangá.</p>
+          </div>
+  
+          <!-- Botão para mostrar mais -->
+          <a onclick="showMore()" class="link-estilo">Mostrar mais</a>
+      </div>
+  </div>
+  
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p>© 2024 Streaming Spy X Family - Todos os direitos reservados</p>
+  </footer>
+  
+  <script>
+      function showMore() {
+          var moreContent = document.getElementById("moreContent");
+          var button = document.querySelector("button");
+  
+          if (moreContent.style.display === "none") {
+              moreContent.style.display = "block";  // Mostra o conteúdo oculto
+              button.textContent = "Mostrar menos";
+          } else {
+              moreContent.style.display = "none";   // Esconde o conteúdo novamente
+              button.textContent = "Mostrar mais";
+          }
+      }
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
