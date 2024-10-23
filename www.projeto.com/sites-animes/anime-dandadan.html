@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming DandaDan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animes.css">
+    <link rel="icon" href="img/icon.png">
+
+    <style>
+      /* O conteúdo extra é oculto quando a página é carregada */
+      #moreContent {
+          display: none;
+      }
+
+      .link-estilo {
+          color: orange;
+          text-decoration: none; /* remove sublinhado */
+      }
+
+      .link-estilo:hover {
+          cursor: pointer; /* faz aparecer a mãozinha */
+          text-decoration: underline; /* opcional: adiciona sublinhado quando o mouse estiver sobre o link */
+      }
+      
+          /* O conteúdo extra é oculto quando a página é carregada */
+      #moreContent {
+          display: none;
+      }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Follow on Twitter</a></li>
+              <li><a href="#" class="text-white">Like on Facebook</a></li>
+              <li><a href="#" class="text-white">Email me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+      <div class="container d-flex justify-content-between">
+        <a href="../index.html" class="navbar-brand d-flex align-items-center">
+       <img src="img/icon.png" alt="" width="10%" height="10%">
+          <strong>Neko Stream</strong>
+        </a>
+        <a href="../index.html" class="btn btn-outline-light">Volta ao menu</a>
+      </div>
+    </div>
+</header>
+
+    <header class="bg-dark text-white p-3 text-center">
+        <h1>Streaming - DandaDan</h1>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="video-container">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0XJxfbN36Uw" 
+                        title="Bleach Streaming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Descrição sobre DandaDan -->
+    <div class="container mt-5">
+      <div class="row">
+          <div class="col-md-8">
+            <h2 class="text-start">
+              DandaDan | 8.60★
+              <img src="img/16.png" style="height: 1em; width: 1em; vertical-align: middle;">
+          </h2>
+          
+            <p>Dandadan é uma série de anime e mangá criada por Yukinobu Tatsu, que começou a ser publicada em 2020 e rapidamente ganhou popularidade por sua mistura única de comédia, ação e elementos sobrenaturais. A história segue Momo Ayase e Okarun, dois estudantes do ensino médio que se veem envolvidos em aventuras excêntricas e sobrenaturais, enquanto tentam desvendar mistérios e enfrentar criaturas estranhas.</p>
+            <div id="moreContent">
+                <p>Okarun, um jovem que se considera um nerd do paranormal, é incentivado por Momo, uma garota com um interesse inusitado por fantasmas e seres sobrenaturais, a se aventurar nesse mundo misterioso. Juntos, eles enfrentam uma série de desafios que incluem fantasmas, alienígenas e outros seres sobrenaturais, enquanto exploram suas próprias emoções e relacionamentos.</p>
+                <p>Dandadan se destaca pela sua arte vibrante e expressiva, que captura a essência cômica e dramática da história. Os personagens são carismáticos e bem desenvolvidos, cada um trazendo uma dinâmica única à narrativa. A interação entre Momo e Okarun é particularmente cativante, adicionando um toque de romance e humor à trama.</p>
+                <p>A série combina ação emocionante com momentos de comédia leve, mantendo os espectadores envolvidos e entretidos. Os temas de amizade, coragem e a luta contra o desconhecido permeiam a história, tornando-a não apenas uma aventura sobrenatural, mas também uma jornada de crescimento pessoal para os protagonistas.</p>
+                <p>Desde sua estreia, Dandadan conquistou uma base de fãs dedicada, e a adaptação para anime trouxe a série para um novo público, elevando ainda mais sua popularidade. Os fãs esperam ansiosamente por novas temporadas e desenvolvimentos da história, enquanto a série se solidifica como uma das obras mais interessantes do gênero.</p>
+            </div>    
+              <a onclick="showMore()" class="link-estilo">Mostrar mais</a>
+          </div>
+          <div class="col-md-4">
+            <h5 style="text-align: center;">Veja também</h5>
+                
+              <div class="video-container">
+             
+                  <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R1_16mKNj-M" 
+                      title="Bleach Streaming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p>© 2024 Streaming DandaDan - Todos os direitos reservados</p>
+  </footer>
+  
+  <script>
+      function showMore() {
+          var moreContent = document.getElementById("moreContent");
+          var button = document.querySelector("button");
+  
+          if (moreContent.style.display === "none") {
+              moreContent.style.display = "block";  // Mostra o conteúdo oculto
+              button.textContent = "Mostrar menos";
+          } else {
+              moreContent.style.display = "none";   // Esconde o conteúdo novamente
+              button.textContent = "Mostrar mais";
+          }
+      }
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
